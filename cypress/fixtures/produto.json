@@ -1,0 +1,14 @@
+{
+    "cria_produto": {
+        "nome": "Curso Lari",
+        "preco": "100",
+        "descricao": "Produto de teste para o site serverest",
+        "quantidade": "10"
+    },
+        "atlz_produto": {
+        "nome": "Curso Lari Atualizado",
+        "preco": "150",
+        "descricao": "Produto de teste para o site serverest - Atualizado",
+        "quantidade": "20"
+    }
+}

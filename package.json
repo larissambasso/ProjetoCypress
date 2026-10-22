@@ -1,0 +1,21 @@
+{
+  "name": "proj_cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "login": "cypress run --spec cypress/e2e/login.cy.js",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "cypress-file-upload": "^5.0.8"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^5.0.0",
+    "cypress-multi-reporters": "^2.0.5",
+    "mocha-junit-reporter": "^2.2.1"
+  }
+}
