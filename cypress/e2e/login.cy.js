@@ -22,9 +22,30 @@ describe('Login do usuário', () => {
         cy.wait('@cadastrarUsuario').its('response.statusCode').should('eq', 201);
     });
 
+    it('Cadastro sem preencher campos', () => {
+        cy.visit('/login');
+        cy.get('[data-testid="cadastrar"]').click();
+        cy.contains('button', 'Cadastrar').click()
+        cy.contains('Nome é obrigatório').should('be.visible');
+        cy.contains('Email é obrigatório').should('be.visible');
+        cy.contains('Password é obrigatório').should('be.visible');
+    });
+
     it('Realiza login do usuário', () => {
         cy.Login(user);
     });
+
+    it('Exibe o nome correto após realizar login', () => {
+        cy.Login(user);
+        cy.contains(`Bem Vindo ${user.nome}`).should('be.visible');
+    });
+
+    it('Fazer logout do usuário', () => {
+        cy.Login(user);
+        cy.contains('button', 'Logout').click()
+        cy.url().should('include', '/login')
+    });
+    
     it('Login invalido do usuário', () => {
         cy.visit('/login');
 
@@ -42,6 +63,13 @@ describe('Login do usuário', () => {
         cy.get('[data-testid="entrar"]').click();
 
         cy.contains('Email deve ser um email válido').should('be.visible');
+    });
+
+    it('Login sem preencher campos', () => {
+        cy.visit('/login');
+        cy.get('[data-testid="entrar"]').click();
+        cy.contains('Email é obrigatório').should('be.visible');
+        cy.contains('Password é obrigatório').should('be.visible');
     });
 
     it('Lista usuários', () => {
