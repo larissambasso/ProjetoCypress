@@ -31,8 +31,6 @@ Na raiz do projeto, use um dos comandos:
 | `npm run cy:open` | Abre a interface do Cypress para execução interativa. |
 | `npm run login` | Executa somente `cypress/e2e/login.cy.js`. |
 
-> **Atenção:** há testes marcados com `it.only` em `cypress/e2e/API_login.cy.js` e `cypress/e2e/cadastro_produto.cy.js`. Esses marcadores restringem a execução aos testes selecionados nesses arquivos. Remova o `.only` para executar todos os testes das respectivas especificações.
-
 ## Relatórios
 
 O projeto está configurado para gerar relatórios Mochawesome e JUnit em `cypress/reports`. Os arquivos nesse diretório são resultados de execuções anteriores; execute a suíte para gerar resultados atualizados.
