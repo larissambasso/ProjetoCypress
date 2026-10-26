@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="6.477" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2026-10-21T16:53:36" tests="0" file="cypress\e2e\cadastro_produto.cy.js" time="0.000" failures="0">
+<testsuites name="Mocha Tests" time="18.158" tests="9" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-10-26T14:26:18" tests="0" file="cypress\e2e\login.cy.js" time="0.000" failures="0">
   </testsuite>
-  <testsuite name="Login do usuário" timestamp="2026-10-21T16:53:36" tests="1" time="6.425" failures="0">
-    <testcase name="Login do usuário Listar produto" time="6.459" classname="Listar produto">
+  <testsuite name="Login do usuário" timestamp="2026-10-26T14:26:18" tests="9" time="18.133" failures="0">
+    <testcase name="Login do usuário Realiza o cadastro de um usuário" time="2.517" classname="Realiza o cadastro de um usuário">
+    </testcase>
+    <testcase name="Login do usuário Cadastro sem preencher campos" time="2.033" classname="Cadastro sem preencher campos">
+    </testcase>
+    <testcase name="Login do usuário Realiza login do usuário" time="1.605" classname="Realiza login do usuário">
+    </testcase>
+    <testcase name="Login do usuário Exibe o nome correto após realizar login" time="1.765" classname="Exibe o nome correto após realizar login">
+    </testcase>
+    <testcase name="Login do usuário Fazer logout do usuário" time="2.318" classname="Fazer logout do usuário">
+    </testcase>
+    <testcase name="Login do usuário Login invalido do usuário" time="1.629" classname="Login invalido do usuário">
+    </testcase>
+    <testcase name="Login do usuário Email invalido do usuário" time="1.612" classname="Email invalido do usuário">
+    </testcase>
+    <testcase name="Login do usuário Login sem preencher campos" time="0.982" classname="Login sem preencher campos">
+    </testcase>
+    <testcase name="Login do usuário Lista usuários" time="3.393" classname="Lista usuários">
     </testcase>
   </testsuite>
 </testsuites>

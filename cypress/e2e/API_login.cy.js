@@ -2,7 +2,7 @@ describe('API de login do Serverest', () => {
     let id
     let email
 
-    it.only('Criar usuário', () => {
+    it('Criar usuário', () => {
         email = `larissa${Date.now()}@qa.com`
         cy.api({
             method: 'POST',
@@ -20,7 +20,7 @@ describe('API de login do Serverest', () => {
             id = response.body._id
         })
     })
-    it.only('Teste de falha - Criar usuário', () => {
+    it('Teste de falha - Criar usuário com email já existente', () => {
         cy.api({
             method: 'POST',
             url: 'https://serverest.dev/usuarios',
