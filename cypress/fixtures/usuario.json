@@ -4,5 +4,9 @@
     "email": "usuario.teste@qa.com",
     "password": "teste123",
     "administrador": "true"
+  },
+  "login": {
+    "email": "login@login.com",
+    "password": "123456"
   }
 }

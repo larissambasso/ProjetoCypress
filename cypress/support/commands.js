@@ -7,6 +7,10 @@ Cypress.Commands.add('Login', (user) => {
         cy.contains('Home').should('be.visible');
 });
 
+Cypress.Commands.add('loginPadrao', () => {
+        return cy.fixture('usuario').then(({ login }) => cy.Login(login));
+});
+
 Cypress.Commands.add('buscarUsuario', (id) => {
         const url = id
                 ? `https://serverest.dev/usuarios/${id}`
