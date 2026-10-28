@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="9.431" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2026-10-28T14:56:09" tests="0" file="cypress\e2e\listar_usuarios.cy.js" time="0.000" failures="0">
+<testsuites name="Mocha Tests" time="16.088" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-10-28T18:41:29" tests="0" file="cypress\e2e\listar_usuarios.cy.js" time="0.000" failures="0">
   </testsuite>
-  <testsuite name="Pagina de lista de usuarios" timestamp="2026-10-28T14:56:09" tests="1" time="9.372" failures="0">
-    <testcase name="Pagina de lista de usuarios Verificar listagem de usuários" time="9.378" classname="Verificar listagem de usuários">
+  <testsuite name="Pagina de lista de usuarios" timestamp="2026-10-28T18:41:29" tests="2" time="16.027" failures="0">
+    <testcase name="Pagina de lista de usuarios Verificar listagem de usuários" time="10.211" classname="Verificar listagem de usuários">
+    </testcase>
+    <testcase name="Pagina de lista de usuarios Excluir um usuário sem carrinho da lista" time="5.740" classname="Excluir um usuário sem carrinho da lista">
     </testcase>
   </testsuite>
 </testsuites>
